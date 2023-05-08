@@ -11,7 +11,9 @@ const responseData = {
   label: CryptoTypes.Bitcoin,
 };
 
-const mockFetch = vi.fn((_url: string, _options: {}) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const mockFetch = vi.fn((_url: string, _options: object) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   return new Promise((resolve, _reject) => {
     const testResponse = {
       ok: true,

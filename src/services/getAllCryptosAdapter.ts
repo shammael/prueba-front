@@ -18,7 +18,6 @@ interface GetAllCryptoResponse {
 }
 
 const getAllCryptosAdapter = (resp: GetAllCryptoResponse[]): Crypto[] => {
-  console.log({ resp });
   return resp.map((resp) => ({
     id: resp.id,
     price: parseFloat(resp.metrics.marketData.priceUSD),

@@ -23,6 +23,5 @@
   "plugins": ["react-refresh"],
   "rules": {
     "react-refresh/only-export-components": "warn"
-  },
-  "include": ["src/**/*.ts", "src/**/*.js", "test/**/*.ts"]
+  }
 }
